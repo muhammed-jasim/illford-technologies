@@ -1,5 +1,10 @@
+
 import Image from "next/image";
 import "../about/about.css";
+=======
+ 
+import "../about/about.css"
+
 
 const About = () => {
   return (
@@ -49,5 +54,9 @@ const About = () => {
     </div>
   );
 };
+=======
+  )
+}
+
 
 export default About;
