@@ -1,11 +1,10 @@
 
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 :root {
   --colortheme: #2bc48a;
 
 }
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +15,9 @@
 
 .home-image-div {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-image {
@@ -39,10 +41,35 @@
   /* padding-inline-start:200px; */
   /* margin-top: 40vh; */
   top: 45vh;
-  /* border: 2px solid red; */
+}
+.home-social{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  right: 110px;
+  top: -65px;
+
+}
+
+.home-social span{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-inline: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 197, 197);
+}
+.home-social span:hover{
+  background-color: black;
+  color: white;
 }
 .first-content {
-  font-weight: 2 00;
+  font-weight: 200;
   font-size: 42px;
   margin-bottom: 10px;
 }
@@ -148,8 +175,12 @@
 .home-service-first-tsxt {
   font-size: 25px;
 }
+.service-intro p{
+  margin: 0;  
+}
 
 .service-intro h1 {
+  margin-bottom: 20px;
   color: var(--colortheme);
 }
 .home-service-img {
@@ -162,6 +193,9 @@
   /* width:600px; */
   min-width: 600px;
 }
+.home-service-item p{
+  margin: 0;
+}
 .home-service-item {
   display: flex;
   align-items: center;
@@ -171,6 +205,7 @@
 }
 .services { 
   margin-top: 50px;
+  margin: 0;
 }
 .home-service-item img {
   max-width: 21px;
@@ -299,6 +334,11 @@
   width: 80%;
   max-width: 1440px;
 }
+.home-testimonial-heading p{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
 .home-testimonial {
   display: flex;
   justify-content: center;
@@ -315,17 +355,19 @@
 }
 .testimonial-talk {
   word-wrap: break-word;
+  font-size: 14px;
   padding-inline-start:35px;
 }
 .testimonial-ratings {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   padding-inline-start: 36px;
 }
 .testimonial-name {
   font-weight: 600;
+  margin: 0;
 }
 .bi-star-fill {
   color: orange;
@@ -342,7 +384,6 @@
   width: 60px;
   position: absolute;
   left:-30px;
-  top: 50;
   bottom: 50;
   height: 60px;
   object-fit: cover;
@@ -350,4 +391,99 @@
 }
 .rating-start{
   padding-inline-end: 15px;
+}
+hr{
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid #2bc48a !important;
+}
+
+
+
+/* blog section */
+
+.home-blog-main-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-blog-heading{
+  width: 80%;
+  max-width: 1440px;
+
+}
+.blog-card{
+  width: 80%;
+  max-width: 1440px;
+}
+.home-blog-btn{
+  background-color: transparent;
+  font-weight: 500;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #2bc48a;
+  width: 130px;
+  height: 35px;
+  font-size: 14px;
+}
+.card-img-top{
+  max-height: 200px;
+  object-fit: cover;
+}
+.home-blog-btn:hover {
+  background-color: #2bc48a;
+  color: white !important;
+}
+.card-text{
+  font-weight: 500;
+  font-size: 15px;
+}
+.home-blog-heading p{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.home-blog-heading h2{
+  color: #2bc48a;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+
+/* FAQ's section */
+
+.faq-main-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.faq-div{
+  width: 80%;
+  max-width: 1440px;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+.faq-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.faq-heading h2{
+  font-weight: 700;
+}
+.questions-ans-div{
+  margin-bottom: 20px;
+}
+.questions{
+  font-size: 16px;
+  font-weight: 600;
+}
+.answers{
+  font-size: 14px;
 }
