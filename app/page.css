@@ -1,10 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-   
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 :root {
@@ -18,6 +12,8 @@
   font-family: "Poppins", sans-serif;
   word-wrap: normal;
 }
+
+
 .home-image-div {
   width: 100%;
 }
@@ -212,6 +208,7 @@
   font-size: 15px;
   position: relative;
   top: 1.5px;
+  color: #181818;
 }
 
 .home-service-explore {
