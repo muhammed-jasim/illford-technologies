@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "../about/about.css";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../Components/Footer";
 
 const About = () => {
   return (
@@ -215,9 +216,50 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="home-blog-main-div">
+        <div className="home-blog-heading">
+          <p>Recent</p>
+          <h2>Blog Post</h2>
+        </div>
+        <div className="row row-cols-1 row-cols-md-3 g-4 blog-card">
+          <div className="col">
+            <div className="card">
+              <img src="images/blog-1.jpg" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">
+                  Grow Your Business with A Digital Marketing Strategy
+                </p>
+                <button className="home-blog-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img src="images/blog-2.jpg" className="card-img-top" alt="" />
+              <div className="card-body">
+                <p className="card-text">
+                  Digital Marketing: Stay Relevant To The Empowered consumer
+                </p>
+                <button className="home-blog-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img src="images/blog-3.jpg" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">
+                  5 Inexpensive Online Tools Get Your Business Off The Ground
+                </p>
+                <button className="home-blog-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
-
 
 export default About;

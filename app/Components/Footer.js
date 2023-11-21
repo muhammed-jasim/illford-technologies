@@ -14,15 +14,15 @@ const Footer = () => {
               vestibulum fermentum odio, vel rhoncus dolor varius a.
             </div>
             <div className="footer-nav">
-              <a href=""><p>Home</p></a>
-              <a href=""><p>About Us</p></a>
-              <a href=""><p>Services</p></a>
-              <a href=""><p>Portfolio</p></a>
+              <a href="/"><p>Home</p></a>
+              <a href="/about"><p>About Us</p></a>
+              <a href="/services"><p>Services</p></a>
+              <a href="/portfolio"><p>Portfolio</p></a>
             </div>
           </div>
           <div className="footer-bottom">
             <div className="footer-bottom-txt">
-              <p>lfordDigital </p>
+              <p>illfordDigital </p>
               <p>Contact</p>
               <p>Privacy Policy </p>
               <p>Terms & Conditions</p>
