@@ -1,132 +1,439 @@
-/* Define a keyframe animation for sliding-in from the side effect */
-@keyframes slideInFromSide {
-    from {
-      opacity: 0;
-      transform: translateX(-50%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  /* Container styles */
-  .about-container {
-    width: 100%;
-  }
-  
-  /* About section styles */
-  .about {
-    height: 500px;
-    width: 100%;
-  }
-  
-  .about-image-div {
-    width: 100%;
-  }
-  
-  .about-image {
-    height: 500px;
-    background-size: cover;
-    object-fit: center;
-    position: relative;
-    top: 0 !important;
-    z-index: -1;
-  }
-  
-  .about-content {
-    color: #2bc48a;
-    font-size: 50px;
-    font-weight: 600;
-    letter-spacing: 0;
-    text-align: center;
-    position: absolute;
-    top: 30vh;
-    left: 40%;
-    animation: slideInFromSide 1s ease-out;
-  }
-  
-  /* About main section styles */
-  .about-main {
-    height: 500px;
-    width: 100%;
-    margin-top: 100px;
-    margin-left: 50px;
-    display: flex;
-    animation: slideInFromSide 1s ease-out;
-  }
-  
-  .about-our-company {
-    height: 130px;
-    color: transparent;
-    font-family: "poppins-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 200;
-    letter-spacing: 0;
-    line-height: normal;
-    border-left: 2px solid black;
-    width: 100%;
-    padding-left: 10px;
-    animation: slideInFromSide 1s ease-out;
-  }
-  
-  /* Other styles for .about-main */
-  .about-main .text-wrapper {
-    color: black;
-  }
-  
-  .about-main .about-text {
-    color: #2bc48a;
-    font-family: "poppins-Bold", Helvetica;
-    font-size: 50px;
-    font-weight: 700;
-  }
-  
-  .img .about-img-mock {
-    width: 45%;
-    object-fit: cover;
-  }
-  
-  .about-main img {
-    position: relative;
-    left: 150px;
-    top: 30px;
-  }
-  
-  .about-main .overlap-1 {
-    height: 500px;
-    position: absolute;
-    width: 700px;
-    left: 700px;
-    padding-top: 170px;
-  }
-  
-  .about-main .about-mission {
-    color: #545454;
-    font-family: "poppins-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  
-  .about-service {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px; /* Increase the margin to give space for the bullet points */
-    margin-top: 20px;
-    animation: slideInFromSide 1s ease-out;
-    font-size: 20px;
-    font-family: "poppins-Bold", Helvetica;
-    font-weight: 600;
-  }
-  
-  .about-service p {
-    margin-bottom: 10px;
-  }
-  
-  /* Style for the bullet point */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
-  
+@keyframes slideInFromSide {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Container styles */
+.about-container {
+  width: 100%;
+}
+
+/* About section styles */
+.about {
+  height: 500px;
+  width: 100%;
+}
+
+.about-image-div {
+  width: 100%;
+}
+
+.about-image {
+  height: 500px;
+  background-size: cover;
+  object-fit: center;
+  position: relative;
+  top: 0 !important;
+  z-index: -1;
+}
+
+.about-content {
+  color: #2bc48a;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+  position: absolute;
+  top: 30vh;
+  left: 40%;
+  animation: slideInFromSide 1s ease-out;
+}
+
+/* About main section styles */
+.about-main {
+  height: 500px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.about-our-company {
+  height: 130px;
+  color: transparent;
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  border-left: 2px solid black;
+  width: 100%;
+  padding-left: 10px;
+  animation: slideInFromSide 1s ease-out;
+}
+
+/* Other styles for .about-main */
+.about-main .text-wrapper {
+  color: black;
+}
+
+.about-main .about-text {
+  color: #2bc48a;
+  font-family: "poppins-Bold", Helvetica;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.img .about-img-mock {
+  width: 45%;
+  object-fit: cover;
+}
+
+.about-main img {
+  position: relative;
+  left: 150px;
+  top: 30px;
+}
+
+.about-main .overlap-1 {
+  height: 500px;
+  position: absolute;
+  width: 700px;
+  left: 700px;
+  padding-top: 170px;
+}
+
+.about-main .about-mission {
+  color: black;
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px; /* Increase the margin to give space for the bullet points */
+  margin-top: 20px;
+  animation: slideInFromSide 1s ease-out;
+  font-size: 20px;
+  font-family: "poppins-Bold", Helvetica;
+  font-weight: 600;
+}
+
+.about-service p {
+  margin-bottom: 10px;
+}
+.learn-more-btn-div {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.learn-more-btn-div button {
+  width: 160px;
+  height: 35px;
+  border-radius: 20px;
+  border: 0.5px solid #2bc48a;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+.learn-more-btn-div button:hover {
+  background-color: #2bc48a;
+  color: white !important;
+}
+.service-arrow {
+  padding-inline-start: 10px;
+  margin: 0;
+  /* border: 2px solid red; */
+  margin-bottom: 14px;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  top: 1.5px;
+}
+.main-overlap-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.overlap-2 {
+  height: 500px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  animation: slideInFromSide 1s ease-out;
+}
+/* .overlap-2-content{
+    border: 2px solid yellow;
+    width: 960px;
+} */
+
+.learn-more-optimize {
+  height: 200px;
+  color: transparent;
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 100%;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.overlap-2 .text-wrapper-2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+.overlap-2 .text-wrapper-3 {
+  color: #2bc48a;
+  font-family: "poppins-Bold", Helvetica;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.overlap-2 .text-wrapper-4 {
+  color: black; /* You can adjust the color as needed */
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 750px;
+  margin-top: 20px;
+}
+
+.overlap-2 img {
+  position: relative;
+  object-fit: cover;
+  width: 40%;
+  border-radius: 5%;
+  padding-top: 20px;
+}
+.text-wrapper-5 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.text-wrapper-5 .bi-check {
+  background-color: #2bc48a;
+  color: white;
+  border-radius: 40%;
+}
+.our-award {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.our-award-div1 {
+  width: 80%;
+  height: 250px;
+  background-color: #221d1d;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 13px;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.our-award-p {
+  color: transparent;
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 40%;
+  margin-top: 50px;
+  padding-left: 40px;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.our-award-div1 .our-award-p1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.our-award-div1 .our-award-p2 {
+  color: #2bc48a;
+  font-family: "poppins-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.our-award-div1 .our-award-p3 {
+  color: #fff;
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 450px;
+  padding-top: 60px;
+}
+.achievements-container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 40px;
+  padding-top: 20px;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.achievement-label {
+  margin-top: 5px;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.our-team {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.our-team-div1 {
+  width: 80%;
+
+  display: flex;
+  align-items: flex-start;
+  border-radius: 13px;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.our-team-p {
+  color: transparent;
+  font-family: "poppins-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+
+  width: 100%;
+  padding-left: 40px;
+  animation: slideInFromSide 1s ease-out;
+}
+
+.our-team-div1 .our-team-p1 {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.our-team-div1 .our-team-p2 {
+  color: #2bc48a;
+  font-family: "poppins-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+.our-team-img {
+  display: flex;
+  width: 80%;
+  margin-top: 25px;
+  object-fit: cover;
+  animation: slideInFromSide 1s ease-out;
+}
+.our-team-img img {
+  position: relative;
+  object-fit: cover;
+  width: 30%;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+/* testimonial section */
+
+.home-testimonial-div {
+  width: 100%;
+  /* border: 2px solid rgb(57, 45, 45); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  animation: slideInFromSide 1s ease-out;
+}
+.home-testimonial-heading {
+  width: 80%;
+  max-width: 1440px;
+}
+.home-testimonial {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1440px;
+  border-bottom: #2bc48a 2px solid;
+}
+.testimonials {
+  position: relative;
+  width: 480px;
+  margin: 50px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 7px;
+}
+.testimonial-talk {
+  word-wrap: break-word;
+  padding-inline-start: 35px;
+}
+.testimonial-ratings {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-start: 36px;
+}
+.testimonial-name {
+  font-weight: 600;
+}
+.bi-star-fill {
+  color: orange;
+}
+.home-testimonial-heading h2 {
+  margin-top: 7px;
+  font-weight: 400;
+}
+.happy-clients {
+  color: #2bc48a;
+  font-weight: 700;
+}
+.testimonials-img {
+  width: 60px;
+  position: absolute;
+  left: -30px;
+  top: 50;
+  bottom: 50;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.rating-start {
+  padding-inline-end: 15px;
+}

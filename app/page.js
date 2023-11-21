@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </div>
             <div className="home-service-img">
-              <img src="/images/service_page.png" alt="" />
+              <img src="/images/service_page.webp" alt="" />
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="home-portfolio-div">
           <div className="home-portfolio-img-div">
             <img
-              src="/images/portfolio-img.png"
+              src="/images/portfolio-img.webp"
               alt=""
               className="home-portfolio-img"
             />
@@ -111,7 +111,7 @@ export default function Home() {
                 Dive-in to learn about our <br /> marketing portfolio and <br />{" "}
                 creative skills.
               </p>
-              <button className="home-portfolio-btn">Contact Us</button>
+              <button className="home-portfolio-btn" >Contact Us</button>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Home() {
           <div className="home-testimonial">
             <div className="testimonials">
               <img
-                src="images/testimonial-img-2.jpg"
+                src="images/testimonial-img-2.webp"
                 alt=""
                 className="testimonials-img"
               />
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
             <div className="testimonials">
               <img
-                src="/images/testimonial-img-1.jpg"
+                src="/images/testimonial-img-1.webp"
                 alt=""
                 className="testimonials-img"
               />
@@ -162,6 +162,7 @@ export default function Home() {
               <div className="testimonial-ratings">
                 <p className="testimonial-name">Robert Cook</p>
                 <div className="rating-start">
+                <i className="bi bi-star-fill"></i>
                   <i className="bi bi-star-fill"></i>
                   <i className="bi bi-star-fill"></i>
                   <i className="bi bi-star-fill"></i>
