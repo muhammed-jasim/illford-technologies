@@ -1,63 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.main-navbar-div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}   
-.nav-bar{
-    width: 80%;
-    height: 70px;
-
- 
-    /* background-color: rgba(255, 255, 255, 0.568); */
-    background-color: white;
-
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    z-index: 12;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin: 0;
-    position:fixed;
-    top:0;
-    max-width: 1440px;
-
+.main-navbar-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.nav-bar {
+  width: 80%;
+  height: 70px;
 
+  /* background-color: rgba(255, 255, 255, 0.568); */
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  z-index: 12;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  max-width: 1440px;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 .nav-bar ul {
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-bar li {
-    display: inline;
-    margin-right: 30px;
-    font-size: 14px;
-  }
-  .nav-bar li :hover{
-    color: rgb(0, 160, 0);
-  }
-  .nav-bar a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-  }
-.logo-div{
-    width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.logo{
-    width: 120px;
-    cursor: pointer;
+
+.nav-bar li {
+  display: inline;
+  margin-right: 30px;
+  font-size: 14px;
+}
+.nav-bar li :hover {
+  color: rgb(0, 160, 0);
+}
+.nav-bar a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+.logo-div {
+  width: 100%;
+}
+.logo {
+  width: 120px;
+  cursor: pointer;
 }
