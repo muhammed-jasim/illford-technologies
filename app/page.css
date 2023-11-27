@@ -92,13 +92,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 12px; */
   border-radius: 25px;
   outline: none;
   border: none;
   background-color: #2bc48a;
   color: white;
   cursor: pointer;
+  font-size: 14px;
 }
 
 /* about section */
@@ -186,12 +186,13 @@
 .home-service-img {
   width: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .home-service-img img {
-  width: 100%;
+  width: 70%;
   /* width:600px; */
-  min-width: 600px;
+  min-width: 400px;
 }
 .home-service-item p{
   margin: 0;
@@ -256,7 +257,28 @@
   border-bottom: 1px solid rgb(118, 113, 113);
 }
 
+@media (max-width: 1020px) {
+  .home-service-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-service-img {
+    width: 100%;
+  }
+  .service-intro {
+    width: 100%;
+    padding: 0;
+  }
+  .home-service-section {
+    box-shadow: none;
+  }
+}
+
+
 /* portfolio section */
+
+
 .home-portfolio-div {
   width: 100%;
   display: flex;
@@ -274,36 +296,50 @@
   max-width: 1080px;
   width: 60%;
   z-index: 2;
+
+
 }
 .home-portfolio-content-div {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* border: 2px solid rgb(4, 255, 0); */
   max-height: 350px;
+
 }
 .home-portfolio-content {
   max-width: 1440px;
   width: 80%;
-  height: 60vh;
+  height: 400px;
+  /* height: 60vh; */
   position: relative;
   top: -200px;
   background-color: #181818;
   max-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 20px;
+
 }
+
 .home-portfolio-content p {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  max-width: 1080px;
+  width: 75%;
+  position: relative !important;
+  /* border: 2px solid red; */
 }
 .home-portfolio-content p,
 .home-portfolio-btn {
   color: white;
   position: relative;
-  top: 220px;
-  left: 150px;
+  /* top: 80px; */
+  
 }
 .home-portfolio-btn {
   width: 140px;
@@ -319,8 +355,13 @@
   cursor: pointer;
   background-color: var(--colortheme);
 }
+.home-portfolio-btn-div{
+  width:75%;
+}
+
 
 /* testimonial css */
+
 
 .home-testimonial-div {
   width: 100%;
@@ -398,6 +439,10 @@ hr{
   border: 1px solid #2bc48a !important;
 }
 
+
+@media (max-width: 1024px){
+  
+}
 
 
 /* blog section */

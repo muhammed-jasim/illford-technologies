@@ -2,7 +2,7 @@ import React from "react";
 import "../Components/Contact.css";
 function Contact() {
   return (
-    <div className="contact-main-div">
+    <div className="contact-main-div" id="contact">
       <div className="contact-div">
         <div className="contact-img-div">
           <img src="images/mock-contact.png" alt="" className="contact-img" />
@@ -15,24 +15,26 @@ function Contact() {
             </h2>
           </div>
           <div className="contact-inputs">
-            <form action="" className="contact-form">
+          <form action="https://formsubmit.co/jasim.illforddigital@gmail.com" method="POST" className="contact-form" >
               <div className="input-first">
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Company" />
+                <input type="text" placeholder="Name"  name="Name" required/>
+                <input type="text" placeholder="Company" className="Company"  name="Company"/>
               </div>
               <div className="second-input">
-                <input type="email" placeholder="Email Address" />
+                <input type="email" placeholder="Email Address" className="Email" required  name="Email"/>
                 <input
                   type="text"
                   inputMode="numeric"
                   placeholder="Phone Number"
                   pattern="[0-9]*"
                   maxLength={10}
+                  name="Phone Number"
+                  required
                 />
               </div>
               <input
                 type="text"
-                name=""
+                name="Requirements"
                 id=""
                 placeholder="Requirements"
                 className="contact-requirement"

@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 .contact-main-div {
-  margin-top: 60px;
+  margin-top:60px;
   width: 100%;
   display: flex;
   background-color: black;
@@ -24,9 +24,15 @@
 }
 .contact-img-div {
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit:  cover;
 }
 .contact-img {
   width: 100%;
+  object-fit:  cover;
+
   /* border: 2px solid rgb(0, 255, 17); */
 }
 
@@ -42,12 +48,12 @@
   margin: 15px;
 }
 .contact-form input {
-  width: 400px;
+  width:40%;
   margin: 15px;
   background-color: transparent;
-  /* padding: 10px; */
+  padding: 10px;
   color: white !important;
-  padding-bottom: 18px;
+  /* padding-bottom: 18px; */
   padding-inline-start: 2px;
   border: none;
   outline: none;
@@ -86,5 +92,5 @@
   font-size: 14px;
 }
 .contact-requirement {
-  width: 688px !important;
+  width:84% !important;
 }

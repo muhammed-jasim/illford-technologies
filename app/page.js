@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </div>
             <div className="home-service-img">
-              <img src="/images/service_page.webp" alt="" />
+              <img src="/images/service-page.png" alt="" />
             </div>
           </div>
         </div>
@@ -111,7 +111,9 @@ export default function Home() {
                 Dive-in to learn about our <br /> marketing portfolio and <br />{" "}
                 creative skills.
               </p>
-              <button className="home-portfolio-btn" >Contact Us</button>
+              <div className="home-portfolio-btn-div"> 
+              <a href="#contact"><button className="home-portfolio-btn" >Contact Us</button></a>
+              </div>
             </div>
           </div>
         </div>
