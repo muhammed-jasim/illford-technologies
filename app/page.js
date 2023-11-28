@@ -129,11 +129,14 @@ export default function Home() {
           </div>
           <div className="home-testimonial">
             <div className="testimonials">
-              <img
-                src="images/testimonial-img-2.webp"
-                alt=""
-                className="testimonials-img"
-              />
+              <div className="testimonials-img-div">
+                <img
+                  src="images/testimonial-img-2.webp"
+                  alt=""
+                  className="testimonials-img"
+                />
+              </div>
+
 
               <p className="testimonial-talk">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -151,11 +154,14 @@ export default function Home() {
               </div>
             </div>
             <div className="testimonials">
-              <img
-                src="/images/testimonial-img-1.webp"
-                alt=""
-                className="testimonials-img"
-              />
+              <div className="testimonials-img-div">
+                <img
+                  src="/images/testimonial-img-1.webp"
+                  alt=""
+                  className="testimonials-img"
+                />
+              </div>
+
 
               <p className="testimonial-talk">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

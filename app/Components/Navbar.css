@@ -105,16 +105,16 @@
     justify-content: center;
     align-items:center;
     margin-bottom:5px;
-    background-color: white;
+    background-color: rgb(239, 239, 239);
     z-index: -4 !important;
 
   }
   .nav-bar li:hover{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(234, 234, 234);
+
   }
   .nav-bar {
     display: flex;
-    background-color: white ;
     justify-content: center;
     z-index: 5;
     align-items: center;
